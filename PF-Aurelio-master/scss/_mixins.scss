@@ -1,0 +1,68 @@
+.btn-gral {
+  background-color: $secondaryColor;
+  color: $mainColor;
+  margin-bottom: 10px;
+  width: 130px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $mainColor;
+    color: $secondaryColor;
+    box-shadow: 0px 2px 10px $shadowColor;
+  }
+}
+
+.btn-bestseller {
+  @extend .btn-gral;
+  margin-left: 100px;
+}
+
+.btn-bestseller2 {
+  @extend .btn-bestseller;
+  margin-top: 18px;
+}
+
+.btn-shop {
+  @extend .btn-gral;
+}
+
+.btn-shop2 {
+  @extend .btn-gral;
+  margin-top: 19px;
+  @media only screen and (max-width: 900px) {
+    margin-top: 39px;
+  }
+}
+
+.btn-shop3 {
+  @extend .btn-gral;
+  @media only screen and (max-width: 900px) {
+    margin-top: 19px;
+  }
+}
+
+.btn-prod-detail {
+  @extend .btn-gral;
+  margin-left: 100px;
+  @media only screen and (max-width: 500px) {
+    margin-left: 15px;
+    width: 100%;
+  }
+}
+
+.btn-news {
+  @extend .btn-gral;
+  margin-left: 5px;
+  width: 75px;
+  height: 30px;
+}
+
+@mixin text-gray($display, $color, $size, $margin) {
+  display: $display;
+  color: $tertiaryColor;
+  font-size: $textH3;
+  margin-left: $margin;
+}

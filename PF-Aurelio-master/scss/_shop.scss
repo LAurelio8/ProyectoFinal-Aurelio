@@ -1,0 +1,160 @@
+.shop-section {
+  display: flex;
+  ul li {
+    margin-bottom: 10px;
+    display: block;
+    margin-right: 150px;
+  }
+  li:first-child {
+    margin-bottom: -15px;
+  }
+}
+
+.primera-fila {
+  display: flex;
+}
+
+.segunda-fila {
+  display: flex;
+}
+
+.shop-position {
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+  .primera-fila {
+    display: flex;
+  }
+
+  .segunda-fila {
+    display: flex;
+  }
+  .shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sf-button {
+    margin-top: 19px;
+  }
+
+  .shop-section > div {
+    width: 100%;
+  }
+
+  .shop-position {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+}
+
+//end shop
+
+//start product detail
+
+.pd-h1 {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.div-img-product {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.pd-title-position {
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-bottom: 0px;
+}
+
+.pd-text-position {
+  color: $tertiaryColor;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.pd-price-position {
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.section-pd {
+  display: flex;
+  display: inline-block;
+  margin-bottom: 25px;
+  h1 {
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    margin-left: 10px;
+    margin-right: 110px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .pd-h1 {
+    text-align: center;
+  }
+
+  .div-img-product {
+    flex-direction: column;
+    width: 98%;
+    max-width: 99%;
+    margin-left: 0px;
+  }
+  .img-costado {
+    flex-direction: row;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 3px;
+    width: 28%;
+    margin-bottom: 10px;
+  }
+  .div-img-product img {
+    width: 98%;
+    margin-left: 15px;
+  }
+  .section-pd {
+    margin-top: 20px;
+  }
+  .pd-title-position {
+    margin-top: 0;
+    margin-left: 15px;
+    text-align: center;
+  }
+  .pd-text-position {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 0;
+    text-align: left;
+  }
+  .pd-price-position {
+    margin-left: 15px;
+  }
+
+  .section-pd {
+    display: flex;
+    display: inline-block;
+    margin-bottom: 25px;
+    h2 {
+      text-align: center;
+    }
+    h3 {
+      margin-left: 15px;
+      margin-right: 110px;
+      width: 98%;
+      text-align: justify;
+    }
+  }
+}

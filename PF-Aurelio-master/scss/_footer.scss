@@ -1,0 +1,13 @@
+footer {
+  background-color: $mainColor;
+  color: $secondaryColor;
+  padding: 10px 30px;
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
