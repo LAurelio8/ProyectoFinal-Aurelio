@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cartTitle.appendChild(closeCartButton);
 
-  fetch("productos.json")
+  fetch("../productos.json")
     .then((response) => response.json())
     .then((data) => {
       const buttons = document.querySelectorAll(
@@ -65,6 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
           const product = data.find((item) => item.id === productId);
           if (product) {
             addToCart(product);
+          } else {
+            console.error("Producto no encontrado.");
           }
         });
       });
@@ -110,6 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         text: "Hubo un problema al procesar tu pedido. Intenta nuevamente.",
         icon: "error",
       });
+    } finally {
     }
   });
 
@@ -161,15 +164,27 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-const learnMoreButton = document.getElementById("learn-more-button");
+const categoryLinks = document.querySelectorAll(".shop-section ul li a");
+const productsContainer = document.getElementById("products-container");
 
-if (learnMoreButton) {
-  learnMoreButton.addEventListener("click", () => {
-    Swal.fire({
-      title: "¡Conocé más!",
-      text: "Esta sección se encontrará disponible próximamente.",
-      icon: "info",
-      confirmButtonText: "OK",
-    });
+categoryLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const category = e.currentTarget.getAttribute("data-category");
+    filterProductsByCategory(category);
+  });
+});
+
+function filterProductsByCategory(category) {
+  const allProducts = productsContainer.querySelectorAll(".shop-position");
+  allProducts.forEach((product) => {
+    if (
+      product.getAttribute("data-category") === category ||
+      category === "all"
+    ) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+    }
   });
 }

@@ -2,18 +2,28 @@ document.addEventListener("DOMContentLoaded", function () {
   var modal = document.getElementById("success-modal");
   var btn = document.querySelector(".btn-news");
   var span = document.querySelector(".close");
+  var emailInput = document.getElementById("email");
 
-  // Cuando el usuario hace clic en el botón "Guardar"
   btn.onclick = function () {
-    modal.style.display = "block";
+    if (!emailInput.value || !emailInput.checkValidity()) {
+      Swal.fire({
+        title: "Error",
+        text: "Por favor, ingresa un correo electrónico válido.",
+        icon: "error",
+      });
+    } else {
+      Swal.fire({
+        title: "¡Gracias por suscribirte a nuestra newsletter!",
+        text: "Próximamente recibirás novedades importantes",
+        icon: "success",
+      });
+    }
   };
 
-  // Cuando el usuario hace clic en el botón "x" para cerrar el modal
   span.onclick = function () {
     modal.style.display = "none";
   };
 
-  // Cuando el usuario hace clic fuera del modal, lo cierra
   window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
