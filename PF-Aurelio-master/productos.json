@@ -4,28 +4,28 @@
     "name": "Calendula Deep Cleansing",
     "price": 24.0,
     "description": "Balancea el tono de tu piel con Ferulic Brew Antioxidant Facial Treatment.",
-    "image": "../img/best-seller1.png"
+    "image": "img/best-seller1.png"
   },
   {
     "id": 2,
     "name": "Midnight Recovery Concentrate",
     "price": 32.0,
     "description": "Tratamiento para la piel durante la noche con propiedades reparadoras.",
-    "image": "../img/best-seller2.png"
+    "image": "img/best-seller2.png"
   },
   {
     "id": 3,
     "name": "Skin Rescuer",
     "price": 18.99,
     "description": "Tratamiento que ayuda a calmar y revitalizar la piel.",
-    "image": "../img/best-seller3.png"
+    "image": "img/best-seller3.png"
   },
   {
     "id": 4,
     "name": "Cilantro & Orange Extract Pollulant Defending Mask",
     "price": 52.0,
     "description": "Máscara defensiva contra contaminantes con extractos de cilantro y naranja.",
-    "image": "../img/best-seller4.png"
+    "image": "img/best-seller4.png"
   },
   {
     "id": 5,

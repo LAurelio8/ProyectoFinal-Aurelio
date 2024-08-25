@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script defer src="../js/shop.js"></script> <!-- Ajustar la ruta del script -->
+  <script defer src="../js/shop.js"></script>
   <title>Aurelio's - Shop</title>
   <meta name="description" content="Con la nueva Tienda Online Oficial de Aurelio's comprá en un solo click. ">
   <meta name="keywords"
@@ -56,36 +56,12 @@
           <li><a href="#" data-category="cremas-facial">Cremas Faciales</a></li>
           <li><a href="#" data-category="cremas-hidratante">Cremas Hidratantes</a></li>
         </ul>
+        <button id="clear-filter" class="btn-custom" style="display: none;">Eliminar filtro</button>
       </div>
       <div id="products-container">
-        <div class="primera-fila">
-          <article class="shop-position" data-product-id="5" data-category="new">
-            <img src="../img/shop1.png" alt="Cleaning masque">
-            <h3>Rare Earth Deep Pore <br> Cleansing Masque Duo</h3>
-            <h4>$99.00</h4>
-            <button class="btn-shop" data-product-id="5">Agregar al Carrito</button>
-          </article>
-          <article class="shop-position" data-product-id="6" data-category="cremas-corporal">
-            <img src="../img/shop2.png" alt="Daily Hydrating">
-            <h3>Daily Hydrating Duo</h3>
-            <h4>$130.00</h4>
-            <button class="btn-shop2" data-product-id="6">Agregar al Carrito</button>
-          </article>
-        </div>
-        <div class="segunda-fila">
-          <article class="shop-position" data-product-id="4" data-category="cremas-facial">
-            <img src="../img/best-seller4.png" alt="Pollulant Defending">
-            <h3>Cilantro & Orange Extract <br>Pollulant Defending Mask</h3>
-            <h4>$52.00</h4>
-            <button class="btn-shop" data-product-id="4">Agregar al Carrito</button>
-          </article>
-          <article class="shop-position" data-product-id="7" data-category="cremas-hidratante">
-            <img src="../img/shop4.png" alt="Turmeric & Cranberry">
-            <h3>Turmeric & Cranberry Seed <br> Energizing Radiance Masque</h3>
-            <h4>$32.00</h4>
-            <button class="btn-shop3" data-product-id="7">Agregar al Carrito</button>
-          </article>
-        </div>
+        <section id="product-list">
+
+        </section>
       </div>
     </section>
   </main>
